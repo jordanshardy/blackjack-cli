@@ -1,3 +1,4 @@
+#value test method
 def hand_value(hand)
     sum = 0
     hand.each do |card|

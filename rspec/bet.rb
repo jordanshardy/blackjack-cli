@@ -1,3 +1,4 @@
+#wager test method
 def bet(wager)
     user_input = 50
     user_balance = 100

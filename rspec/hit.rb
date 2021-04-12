@@ -1,3 +1,4 @@
+# hand hit test method
 def hit(hand)
 hand = [] 
 deck = [1, 1, 1, 1, 1, 1, 1, 1] 

@@ -1,3 +1,4 @@
+# menu test method
 require 'tty-prompt'
 require 'json'
 
