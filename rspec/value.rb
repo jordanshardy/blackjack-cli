@@ -4,4 +4,4 @@ def hand_value(hand)
       sum += card
     end
     sum
-end
+  end
