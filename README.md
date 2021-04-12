@@ -80,7 +80,7 @@ The app made use of third-party gem (extensions) to enhance the graphical user i
 
 After running the script Blackjack will start and print a menu to the terminal screen
 
-<img src="docs/control-flow.jpg">
+<img src="docs/main-menu.jpg">
 
 From the menu a user can choose to: 
 - View Balance
@@ -99,8 +99,8 @@ This displays the basic rules and how to play Blackjack
 
 This initiates the game. Once the game starts, the user will be prompted to place a bet.
 
-<img src="docs/main-menu">
+<img src="docs/bet-prompt.jpg">
 
 The user will be dealt 2 cards, and the dealer 1 card. both hands are displayed on the screen and the user has the choice to 'Hit' (add a card to their hand) or 'Stand'. When the player stands the program will deal cards to the dealer. At this point the app will determine a winner based on the rules of Blackjack.
 
-<img src="docs/calculate">
+<img src="docs/calculate.jpg">
