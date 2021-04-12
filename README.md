@@ -80,7 +80,7 @@ The app made use of third-party gem (extensions) to enhance the graphical user i
 
 After running the script Blackjack will start and print a menu to the terminal screen
 
-<img src="../docs/main-menu.jpg">
+<img src="blackjack-cli/docs/main-menu.jpg">
 
 From the menu a user can choose to: 
 - View Balance
