@@ -8,4 +8,4 @@ gem install "tty-font"
 
 gem install "rspec"
 
-ruby ./src/main.rb
+ruby main.rb

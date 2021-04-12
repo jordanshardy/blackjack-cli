@@ -1,6 +1,6 @@
 # Blackjack Ruby CLI Game
 
-Source code: 
+Source code: (https://github.com/jordanshardy/blackjack-cli.git)
 
 ## Description
 
@@ -61,12 +61,46 @@ https://trello.com/b/Ir2HoXRh/t1a3-terminal-application
 ### Dependencies
 
 The app made use of third-party gem (extensions) to enhance the graphical user interface experience:
-* [Artii](https://github.com/miketierney/artii) for the ASCII word art
-* [IO/Console](https://github.com/ruby/io-console) for function that allows the user to press any key to continue
+* TTY-Prompt (https://github.com/piotrmurach/tty-prompt.git)
+* TTY-Pastel (https://github.com/piotrmurach/pastel.git)
+* TTY-Font (https://github.com/piotrmurach/tty-font.git)
+* Rspec (https://github.com/rspec/rspec.git)
 
 ## Installation Instructions
-The current product is a completed, functional proof-of-concept, with many extensible features identified by the team for future exploration. 
+ 
+ 1. Clone this repo (https://github.com/jordanshardy/blackjack-cli.git) or download black-cli.zip directly to your computer.
+ 2. Open your systems terminal
+ 3. Navigate to ```blackjack-cli/src```
+ 4. Run the bash script ```./app-scipt```
+
+ This script will install all needed gem files and run the main.rb file to initiate the game.
+
 
 ## Instructions for use
 
+After running the script Blackjack will start and print a menu to the terminal screen
 
+<img src="./docs/main-menu.jpg">
+
+From the menu a user can choose to: 
+- View Balance
+
+This displays the users bank/bet balance to the screen. The balance is automatically updated to the users external file.
+
+- View Ratio
+
+This displays the Users Win/loss ratio to the screen.
+
+- View Rules
+
+This displays the basic rules and how to play Blackjack 
+
+-Play Game
+
+This initiates the game. Once the game starts, the user will be prompted to place a bet.
+
+<img src="./docs/bet-prompt>
+
+The user will be dealt 2 cards, and the dealer 1 card. both hands are displayed on the screen and the user has the choice to 'Hit' (add a card to their hand) or 'Stand'. When the player stands the program will deal cards to the dealer. At this point the app will determine a winner based on the rules of Blackjack.
+
+<img src="./docs/calculate>
