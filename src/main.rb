@@ -21,6 +21,7 @@ class Play
     @wager = 0
   end
 
+  # Menu Method using tty-prompt
   def main_menu
     finished = false
     while finished == false
@@ -50,6 +51,7 @@ class Play
     end
   end
 
+  # method to push balance updates to json file
   def update_file
     file = File.read('./user.json')
     data_hash = JSON.parse(file)
@@ -57,15 +59,18 @@ class Play
     File.write('./user.json', JSON.dump(data_hash))
   end
 
+  #take random card from deck array
   def random_card
     return @deck[rand(@deck.length)]
   end
 
+  # adds random card array to player and dealer hands
   def starting_hands
     @dealer_hand.push(random_card)
     @player_hand.push(random_card, random_card)
   end
 
+  # sums the value of hands
   def hand_value(hand)
       sum = 0
       hand.each do |card|
@@ -74,20 +79,24 @@ class Play
       sum
   end
 
+  # clears hands after each game
   def clear_hands
     @player_hand = []
     @dealer_hand = []
   end 
 
+  # shows hands after hitting and standing and starting new game
   def show_hands
     puts "\nDealer hand: #{@dealer_hand}" " | Hand Value: #{hand_value(@dealer_hand)}"
     puts "\nYour hand: #{@player_hand}" " | Hand Value: #{hand_value(@player_hand)}"
   end
 
+  # adds hand to player when hitting
   def hit(hand)
     hand.push(random_card)
   end 
 
+  # calculates dealer hit conditional
   def dealer_decision
     while hand_value(@dealer_hand) < 17 
       puts "\nDealer hits!"
@@ -96,6 +105,7 @@ class Play
     end
   end
 
+  #calculates win/loss conditions after player stands
   def calculate_conditions
     if hand_value(@dealer_hand) > 21
       puts "\ndealer busts! You WIN!"
@@ -116,6 +126,7 @@ class Play
     end
   end 
 
+  # method to get user input and place bet on hand
   def bet
     user_input = false
     until user_input == true
@@ -135,6 +146,7 @@ class Play
     end
   end 
 
+  # method to run game and prompt user to hit or stand
   def run_game
     bet()
     starting_hands()
