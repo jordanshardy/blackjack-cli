@@ -1,5 +1,6 @@
 require_relative '../menu'
 
+# menu method test
 describe 'main_menu' do
 	it 'it should return the user balance' do
 		expect(main_menu(500)).to be 500
@@ -14,3 +15,4 @@ describe 'main_menu' do
 		end
 	end
 end
+
