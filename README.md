@@ -46,7 +46,7 @@ The app has a user feature that saves the players information for future use. Be
 
 ## Control Flow Diagram
 
-<img src="../docs/control-flow.jpg">
+<img src="docs/control-flow.jpg">
 
 
 ### Implementation Plan
