@@ -1,3 +1,4 @@
+# value rspec test
 require_relative '../value'
 
 describe 'hand_value' do

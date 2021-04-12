@@ -1,3 +1,4 @@
+#bet method rspec test
 require_relative '../bet'
 
 describe 'bet' do

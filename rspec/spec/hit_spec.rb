@@ -1,3 +1,4 @@
+# hit method rspec test
 require_relative '../hit'
 
 
