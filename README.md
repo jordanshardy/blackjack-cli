@@ -76,7 +76,7 @@ The app made use of third-party gem (extensions) to enhance the graphical user i
  This script will install all needed gem files and run the main.rb file to initiate the game.
 
 
-## Instructions for use
+## Outline for use
 
 After running the script Blackjack will start and print a menu to the terminal screen
 
@@ -85,22 +85,30 @@ After running the script Blackjack will start and print a menu to the terminal s
 From the menu a user can choose to: 
 - View Balance
 
-This displays the users bank/bet balance to the screen. The balance is automatically updated to the users external file.
+This displays the users bank/bet balance to the screen. The balance is automatically updated to the users external file. Once this option has displayed the amount to the screen, the menu will again ask to choose from menu options.
 
 - View Ratio
 
-This displays the Users Win/loss ratio to the screen.
+This displays the Users Win/loss ratio to the screen. Once this option has displayed the amount to the screen, the menu will again ask to choose from menu options.
 
 - View Rules
 
-This displays the basic rules and how to play Blackjack 
+This displays the basic rules and how to play Blackjack. Once this option has displayed the amount to the screen, the menu will again ask to choose from menu options.
 
 -Play Game
 
-This initiates the game. Once the game starts, the user will be prompted to place a bet.
+This initiates the game. Once the game starts, the user will be prompted to place a bet. If a user places a bet that is greater than their avaiable balance, they are shown their balance and asked again to place a bet.
 
 <img src="docs/bet-prompt.jpg">
 
-The user will be dealt 2 cards, and the dealer 1 card. both hands are displayed on the screen and the user has the choice to 'Hit' (add a card to their hand) or 'Stand'. When the player stands the program will deal cards to the dealer. At this point the app will determine a winner based on the rules of Blackjack.
+Once the bet is placed, the user will be dealt 2 cards, and the dealer 1 card. Both hands are displayed on the screen with the cards and the value of their hand. The user can then choose to 'Hit' (add a card to their hand) or 'Stand'. 
+
+If the player hits, a card will be added to their hand and the hand value updated. If the new card increases their hand value to over 21, they 'Bust' (exceed a hand value of 21) and lose the hand. They will then be shown their new balance on the screen with the hand bet subtracted. 
+
+When the player stands the program will deal cards to the dealer. The dealer will keep hitting cards until their hand value is greater than 17. During this process if they exceed 21, the dealer busts and the player wins. The new balance is displayed to the screen with the bet added to the balance. 
+
+If neither the player or the dealer bust, the program will determine who wins (The hand with the highest value), the winner is printed to the screen and the user balance is updated.
+
+Once the game is complete, the user can again choose an option from the main menu.
 
 <img src="docs/calculate.jpg">
