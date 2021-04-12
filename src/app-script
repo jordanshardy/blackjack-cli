@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+gem install "tty-prompt"
+
+gem install "pastel"
+
+gem install "tty-font"
+
+gem install "rspec"
+
+ruby ./src/main.rb
